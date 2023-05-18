@@ -1,9 +1,8 @@
 import { questionsData } from '@/questions';
 import React, { useState } from 'react';
+import { Question } from '../components/Question';
+import { ProgressBar } from "../components/ProgressBar"
 
-import { Question } from '@/components/Question';
-import Layout from './Layout';
-import {ProgressBar} from "../components/ProgressBar"
 
 function Home() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,12 +18,12 @@ function Home() {
 
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1);
-    setProgress(prev=>prev+25)
+    setProgress(prev => prev + 20)
   };
 
   const handlePreviousPage = () => {
     setCurrentPage(currentPage - 1);
-    setProgress(prev=>prev-25)
+    setProgress(prev => prev - 25)
   };
 
 
@@ -65,7 +64,7 @@ function Home() {
           </div>
         </div>
       </main>
-   <ProgressBar progress={progress}/>
+      <ProgressBar currentPage={currentPage} progress={progress } />
     </>
   );
 }
