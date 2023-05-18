@@ -7,7 +7,7 @@ console.log(props.currentPage)
   
 
   return (
-    <div className="flex  gap-2"> 
+    <div id="prog" className="flex  gap-2"> 
     <div className="progress">
       <div
         style={{
@@ -20,7 +20,11 @@ console.log(props.currentPage)
       />
     </div>
 
-      {`Page ${props.currentPage} Off 6`}
+    <div className="mt-[-9px]">
+    {`Page ${props.currentPage} Off 6`}
+    </div>
+
+     
     </div>
   );
 };
