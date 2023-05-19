@@ -1,4 +1,4 @@
-import { questionsData } from '@/questions';
+import { questionsData } from '../questions';
 import React, { useState } from 'react';
 import { Question } from '../components/Question';
 import { ProgressBar } from "../components/ProgressBar"
