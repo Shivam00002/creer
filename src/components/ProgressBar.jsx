@@ -26,6 +26,8 @@ console.log(props.currentPage)
     {`Page ${props.currentPage} Off 6`}
     </div>
 
+
+
      
     </div>
   );
