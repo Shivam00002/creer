@@ -16,6 +16,8 @@ console.log(props.currentPage)
           background:  "rgb(59, 134, 238)",
 
 
+
+
           transition: "width 0.2s",
           borderRadius : "7px"
         }}
