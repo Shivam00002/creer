@@ -6,6 +6,7 @@ export const ProgressBar = (props) => {
 console.log(props.currentPage)
   
 
+
   return (
     <div id="prog" className="flex  gap-2"> 
     <div className="progress">
