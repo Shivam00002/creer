@@ -6,6 +6,7 @@ export const Question = ({ item }) => {
   const [active, setActive] = useState(false);
 
   return (
+
     <>
       <h2>{item.question}</h2>
       <div className="options flex gap-[10px] ml-[16px] mt-[4px] p-[5px] ">
